@@ -34,7 +34,6 @@
       border-radius: 8px;
       overflow: hidden;
     }
-    /* Сол жақ панель */
     .sidebar {
       background: #2f4a6b;
       color: #fff;
@@ -70,7 +69,6 @@
       margin-bottom: 6px;
     }
 
-    /* Навигация (басқанда сол бөлімге өтеді) */
     .nav-menu { list-style: none; }
     .nav-menu li { margin-bottom: 8px; }
     .nav-menu a {
@@ -127,6 +125,29 @@
     .entry p { font-size: 0.88rem; color: #444; }
     .skill-bar { background: #e5e7eb; border-radius: 6px; height: 8px; margin-top: 6px; overflow: hidden; }
     .skill-bar span { display: block; height: 100%; background: #2f4a6b; }
+
+    /* 768px-тен кіші экрандарда (телефон, кіші планшет) */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 24px 20px;
+  }
+  .main {
+    padding: 24px 20px;
+  }
+  .entry-top {
+    flex-direction: column;
+    gap: 2px;
+  }
+  body {
+    padding: 0;
+  }
+}
   </style>
 </head>
 <body>
